@@ -6,5 +6,5 @@ Gulp file for Node.js projects that will create a tar.gz binary file ready for O
 |-- repo.tar.gz 
 |   |-- repo.tar 
 |   |   |-- repo/ 
-|   |   |   |--project contents
+|   |   |   |-- project contents
 ```
