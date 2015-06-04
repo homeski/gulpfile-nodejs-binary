@@ -1,4 +1,4 @@
-Gulp file for Node.js projects that will create a tar.gz binary file for OpenShift deployment.
+Gulp file for Node.js projects that will create a tar.gz binary file ready for OpenShift deployment.
 
 
 ###output:
