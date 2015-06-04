@@ -22,7 +22,7 @@ gulp.task('cp', ['mkdirs'], function() {
 		.pipe(gulp.dest(tmpDir))
 });
 
-// tar files from temp folder
+// tarball files from temp folder
 gulp.task('tarball', ['cp'], function() {
 	var packer = tar.Pack({ noProprietary: true })
 		.on('error', onError);
@@ -42,7 +42,7 @@ gulp.task('clean', ['tarball'], function() {
 });
 
 // default task
-// gc is dependent on all previous jobs
+// clean is dependent on all previous jobs
 gulp.task('default', ['clean']);
 
 function onError(err) {
