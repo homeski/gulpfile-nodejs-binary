@@ -2,7 +2,6 @@ var fs = require('fs-extra');
 var fstream = require("fstream");
 var gulp = require('gulp');
 var tar = require('tar');
-var print = require('gulp-print');
 var zlib = require('zlib');
 
 // config variables
@@ -20,7 +19,6 @@ gulp.task('mkdirs', function() {
 // copy project files to temp folder
 gulp.task('cp', ['mkdirs'], function() {
 	return gulp.src(['**/*', '.*/**', '!.git/**', '!target/**'])
-		//.pipe(print())
 		.pipe(gulp.dest(tmpDir))
 });
 
